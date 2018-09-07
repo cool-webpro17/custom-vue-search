@@ -37,6 +37,15 @@
           {{option.text}}
         </div>
       </template>
+      <template v-if="filteredOptions.length == 0">
+        <div class="item"
+             :class="{ 'selected': option.selected, 'current': pointer === idx }"
+             @click.stop="selectItem(null)"
+             @mousedown="mousedownItem"
+             @mouseenter="pointerSet(null)">
+          {{option.text}}
+        </div>
+      </template>
     </div>
   </div>
 </template>
