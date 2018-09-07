@@ -49,7 +49,7 @@
              @click.stop="selectItem(null)"
              @mousedown="mousedownItem"
              @mouseenter="pointerSet(null)">
-          {{option.text}}
+          Nothing found, create new character
         </div>
       </template>
     </div>
