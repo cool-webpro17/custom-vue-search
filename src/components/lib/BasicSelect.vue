@@ -37,6 +37,12 @@
           {{option.text}}
         </div>
       </template>
+      {{
+      filteredOptions
+      }}
+      {{
+      filteredOptions.length
+      }}
       <template v-if="filteredOptions.length == 0">
         <div class="item"
              :class="{ 'selected': option.selected, 'current': pointer === idx }"
