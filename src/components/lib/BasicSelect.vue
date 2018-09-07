@@ -37,21 +37,12 @@
           {{option.text}}
         </div>
       </template>
-      {{
-      filteredOptions
-      }}
-      {{
-      filteredOptions.length
-      }}
-      <template v-if="filteredOptions.length == 0">
-        <div class="item"
-             :class="{ 'selected': option.selected, 'current': pointer === idx }"
+      <div class="item"
              @click.stop="selectItem(null)"
              @mousedown="mousedownItem"
              @mouseenter="pointerSet(null)">
           Nothing found, create new character
-        </div>
-      </template>
+      </div>
     </div>
   </div>
 </template>
