@@ -1,4 +1,4 @@
-<script>
+/*<script>
   /* wrap basic component */
   import BasicSelect from './BasicSelect.vue'
   import { commonMixin } from './mixins'
@@ -80,3 +80,4 @@
     }
   }
 </script>
+*/
