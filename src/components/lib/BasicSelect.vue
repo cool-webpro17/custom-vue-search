@@ -34,15 +34,9 @@
              @click.stop="selectItem(option)"
              @mousedown="mousedownItem"
              @mouseenter="pointerSet(idx)">
-          {{option.text}}
+          {{option.text}} {{ idx }} testing
         </div>
       </template>
-      <div class="item"
-             @click.stop="selectItem(null)"
-             @mousedown="mousedownItem"
-             @mouseenter="pointerSet(null)">
-          Nothing found, create new character
-      </div>
     </div>
   </div>
 </template>
